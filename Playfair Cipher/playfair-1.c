@@ -14,7 +14,6 @@ void displayTable(char prepared_key[5][5]) {
   printf("\n");
 }
 
-// Function to prepare the key for the Playfair cipher
 void prepareTable(char key[], char prepared_key[5][5]) {
   int keyLength = strlen(key);
   int k = 0;
@@ -41,8 +40,6 @@ void prepareTable(char key[], char prepared_key[5][5]) {
     }
   }
 }
-
-// Function to find the position of a character in the prepared key
 void findPosition(char prepared_key[5][5], char ch, int *row, int *col) {
   if (ch == 'J') ch = 'I';
 
@@ -57,7 +54,6 @@ void findPosition(char prepared_key[5][5], char ch, int *row, int *col) {
   }
 }
 
-// Function to perform encryption using the Playfair cipher
 void playfairEncrypt(char prepared_key[5][5], char plaintext[]) {
   int len = strlen(plaintext);
   char ciphertext[len * 2];
@@ -88,7 +84,6 @@ void playfairEncrypt(char prepared_key[5][5], char plaintext[]) {
   printf("\n");
 }
 
-// Function to remove all spaces from a given string
 void removeSpaces(char *str) {
   int count = 0;
 
@@ -98,32 +93,26 @@ void removeSpaces(char *str) {
   str[count] = '\0';
 }
 
-void preparePlainText(char plaintext[], char prepared_plaintext[]) {
+void preparePlaintext(char plaintext[], char prepared_plaintext[]) {
   removeSpaces(plaintext);
   int len = strlen(plaintext);
 
   int i, count = 0;
+
   for (i = 0; i < len; i++) {
     prepared_plaintext[count] = plaintext[i];
 
-    if (count % 2 != 1 && i + 1 != len) {
-      if (plaintext[i] == plaintext[i + 1]) {
-        prepared_plaintext[++count] = 'X';
-      }
+    if (i + 1 < len && plaintext[i] == plaintext[i + 1]) {
+      prepared_plaintext[++count] = 'X';
     }
-    count++;
-  }
-
-  // Add bogus character at the end of letters if length is odd
-  if (count % 2) {
-    prepared_plaintext[count] = 'X';
     count++;
   }
   prepared_plaintext[count] = '\0';
 
   printf("Grouped Text = ");
   for (int i = 0; i < count; i += 2) {
-    printf("%c%c ", prepared_plaintext[i], prepared_plaintext[i + 1]);
+    printf("%c%c ", toupper(prepared_plaintext[i]),
+           toupper(prepared_plaintext[i + 1]));
   }
   printf("\n");
 }
@@ -143,7 +132,7 @@ int main() {
   displayTable(prepared_key);
 
   char prepapred_plaintext[100];
-  preparePlainText(plaintext, prepapred_plaintext);
+  preparePlaintext(plaintext, prepapred_plaintext);
   playfairEncrypt(prepared_key, prepapred_plaintext);
 
   return 0;
