@@ -122,10 +122,12 @@ int main() {
   char plaintext[100] = "Crypto is too easy";
 
   printf("Enter the key (up to 26 characters): ");
-  scanf("%[^\n]s", key);
+  printf("%s", key);
+  // scanf("%[^\n]s", key);
 
-  printf("Enter the plaintext: ");
-  scanf(" %[^\n]s", plaintext);
+  printf("\nEnter the plaintext: ");
+  printf("%s", plaintext);
+  // scanf(" %[^\n]s", plaintext);
 
   char prepared_key[5][5];
   prepareTable(key, prepared_key);
