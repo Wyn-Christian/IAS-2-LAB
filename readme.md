@@ -9,11 +9,11 @@
    4. [Vigenere Cipher](/1.4%20-%20Vigenere%20Cipher/vigenere-cipher.c)
    5. [Rail fence - row & column transformation](/1.5%20-%20Rail%20Fence/rail-fence.c)
 2. Implement the following algorithms:
-   1. DES
-   2. RSA Algorithm
-   3. Diffie-Hellman
-   4. MD5
-   5. SHA-1
+   1. [DES](/2.1%20-%20DES/des.c)
+   2. [RSA Algorithm](/2.2%20-%20RSA%20Algorithm/rsa-algorithm.c)
+   3. [Diffie-Hellman](/2.3%20-%20Diffie-Hellman/diffie-hellman.c)
+   4. [MD5](/2.4%20-%20MD5/md5.c)
+   5. [SHA-1](/2.5%20-%20SHA-1/sha-1.c)
 3. Implement the Signature Scheme - Digital Signature Standard
 4. Demonstrate how to provide secure data storage, secure data transmission and for creating digital signature (GnuPG)
 5. Setup a honey pot and monior the honeypot on netowrk (KF Sensor)
