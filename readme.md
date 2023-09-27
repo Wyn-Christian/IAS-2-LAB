@@ -1,4 +1,4 @@
-# LAB codes for SIA 2
+# LAB codes for IAS 2
 
 ## List of Experiments:
 
