@@ -9,7 +9,7 @@ int main() {
   unsigned int c[20], d[20];
   char msg[20];
 
-  clrscr();
+  // clrscr();
   printf("Enter plain text\n ");
   scanf("%s", msg);
 
