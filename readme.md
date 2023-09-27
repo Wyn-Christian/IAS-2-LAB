@@ -21,6 +21,9 @@
 7. Perform wireless audit on an access point or a router and decrypt WEP and WPA. (Net Stumbler)
 8. Demonstrate intrusion detection system (ids) using any tool (snort or any other s/w)
 
+> [!NOTE]
+> The codes here doesn't guarantee it's functionality. Test it before using it to your activities.
+
 ---
 
 ## Todo List
