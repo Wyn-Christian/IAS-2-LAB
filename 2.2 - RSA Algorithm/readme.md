@@ -12,7 +12,7 @@ A basic principle behind RSA is the observation that it is practical to find thr
 integer `m`:
 
 $$
-(m^e)^d = m (\text{mod } n)
+(m^e)^d = m (\bmod n)
 $$
 
 The public key is represented by the integers `n` and `e`; and, the private key, by the integer `d`. `m` represents the message.
@@ -26,5 +26,5 @@ The intention is that messages encrypted with the public key can only be decrypt
 2. Compute n as the product of `p` and `q`.
 3. Compute $`(p-1)*(q-1)`$ and store it in `z`.
 4. Select a random prime number `e` that is less than that of `z`.
-5. Compute the private key, `d` as $`e * mod^{-1}(z)`$
+5. Compute the private key, `d` as $`e * \bmod^{-1}(z)`$
 6. The cipher text is computed as $`message^e * \bmod{n}`$.
