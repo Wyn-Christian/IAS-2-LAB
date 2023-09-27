@@ -1,4 +1,4 @@
-# Implementation of Cipher
+# Implementation of Rail Fence - Row & Column Transformation Technique
 
 ## Aim:
 

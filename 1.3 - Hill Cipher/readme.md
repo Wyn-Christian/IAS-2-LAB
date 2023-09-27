@@ -1,4 +1,4 @@
-# Implementation of Cipher
+# Implementation of Hill Cipher
 
 ## Aim:
 

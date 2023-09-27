@@ -1,4 +1,4 @@
-# Implementation of Cipher
+# Implementation of RSA
 
 ## Aim:
 
@@ -28,3 +28,4 @@ The intention is that messages encrypted with the public key can only be decrypt
 4. Select a random prime number `e` that is less than that of `z`.
 5. Compute the private key, `d` as $`e * \bmod^{-1}(z)`$
 6. The cipher text is computed as $`message^e * \bmod{n}`$.
+7. Decryption is done as $`cipher^d \bmod n`$.
