@@ -17,7 +17,7 @@
 3. Implement the Signature Scheme - Digital Signature Standard
 4. Demonstrate how to provide secure data storage, secure data transmission and for creating digital signature (GnuPG)
 5. Setup a honey pot and monior the honeypot on netowrk (KF Sensor)
-6. Installation of rootkits an study of abou the variety of options
+6. Installation of rootkits an study of about the variety of options
 7. Perform wireless audit on an access point or a router and decrypt WEP and WPA. (Net Stumbler)
 8. Demonstrate intrusion detection system (ids) using any tool (snort or any other s/w)
 

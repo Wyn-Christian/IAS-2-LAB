@@ -18,4 +18,3 @@ is written out. The message is then read off in rows
 3. Now read the keyword depending on the number of columns of the plain text.
 4. Arrange the characters of the keyword in sorted order and the corresponding columns of the plain text.
 5. Read the characters row wise or column wise in the former order to get the cipher text.
-6.
